@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: center;    
+}
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="newlauncher.css" />
+</head>
+
+<body>
+
+        <!-- English stuff -->
+
+
+   <img src="http://l3cdn.funcom.com/tsw/uploads/Funcom-logo.svg_.png" height="100" width="100">   <h1>Funcom Downtime Announcement Tool</h1><h3>Fill out the appropriate information and hit "Generate Text".  When ready to copy, simply click the box and it will select all of the text for you! Make sure you CTRL-C the info, and you should be just fine. </h3>
+    <div class="objects">
+        <label>Month</label>
+        <select class="month">
+            <option value="0">1 - January</option>
+            <option value="1">2 - February</option>
+            <option value="2">3 - March</option>
+            <option value="3">4 - April</option>
+            <option value="4">5 - May</option>
+            <option value="5">6 - June</option>
+            <option value="6">7 - July</option>
+            <option value="7">8 - August</option>
+            <option value="8">9 - September</option>
+            <option value="9">10 - October</option>
+            <option value="10">11 - November</option>
+            <option value="11">12 - December</option>
+        </select>
+    
+        <label>Date</label>
+        <input size="2" maxlength="2" class="date" type="text" placeholder="##" style="margin:0px;float:center;" />
+ 
+ 
+		<label>UTC HOURS</label>
+        <select class="gmt">
+            <option value="GMT IS NOT AN ABBREVIATION FOR IGNORE THIS BOX">Choose one</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="00">00</option>
+			
+        </select>
+		       	
+		<label>Minutes</label>
+        <select class="mins">
+            <option value="00">Choose one</option>
+            <option value="00">00</option>
+			<option value="15">15</option>
+			<option value="30">30</option>
+			<option value="45">45</option>
+		</select>
+		<label>Hours down</label>
+        <select class="hours">
+            <option value="TELL ME THE NUMBER OF HOURS DOWN OR YOU WILL LOOK RATHER SILLY">Choose one</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+			     <option value="6">6</option>
+				      <option value="7">7</option>
+					       <option value="8">8</option>
+						        <option value="9">9</option>
+								     <option value="10">10</option>
+									      <option value="11">11</option>
+										       <option value="12">12</option>
+											        <option value="13">13</option>
+													     <option value="14">14</option>
+														      <option value="15">15</option>
+															  
+        </select>
+		        <label>Issue type</label>
+        <select class="type">
+            <option>Choose One</option>
+            <option value="0">Restart</option>
+            <option value="1">Update</option>
+            <option value="2">Maintenance</option>
+			<option value="3">Hotfix</option>
+        </select>
+		 <label>Version Number</label>
+        <input size="19" maxlength="19" class="version" type="text" placeholder="Use only if updating version" />
+		<br>
+		<h1><button type="button">   Generate Text   </button></h1>
+		<br />
+<!--This is for the Maintenance checkbox 
+		<BR />
+		<label>Check this box if DST is in effect</label>
+	<br />
+		<input type="checkbox" class="ckMaint" value="ckDST" >Daylight Savings is in effect!
+	<br />
+ -->
+<p>
+	<table id="table" tabindex="0">
+		<tbody><tr>
+		<td bgcolor=#5858fa><span><h3>English Launcher Text</h3></span></td>
+		<td bgcolor=#5858fa><h3>English Subject</h3></td>
+		<td bgcolor=#5858fa><h3>English Forum Text</h3></td>
+		<td bgcolor=#5858fa><h3>English Twitter Text</h3></td>
+		</tr>
+		
+		<TR>
+
+
+<td><p class="english"></p></td>   
+		<td><p class="ensubject"></p></td>
+		<td><p class="enForum"></p></td>
+        <td><p class="enTwitter"></p></td>
+		</tr>
+		<tr>
+	<td><form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW EN Launcher" onclick="window.open('http://msgtool.funcom.com/view_note?universe=TSWLive/en&revision=latest')" />
+		</form>
+		<form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC EN Launcher" onclick="window.open('http://msgtool.funcom.com/view_note?universe=AoCLiveEU/en&revision=latest')" />
+		</form>
+		</td>
+		<td><form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW EN Forums" onclick="window.open('https://forums.thesecretworld.com/forumdisplay.php?3-Announcements')" />
+		</form>
+		<form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC EN Forums" onclick="window.open('http://forums.ageofconan.com/forumdisplay.php?2-Announcements')" />
+		</form>
+		</td>		<td><form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW EN Forums" onclick="window.open('https://forums.thesecretworld.com/forumdisplay.php?3-Announcements')" />
+		</form>
+		<form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC EN Forums" onclick="window.open('http://forums.ageofconan.com/forumdisplay.php?2-Announcements')" />
+		</form>
+		</td>	<td><form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value=" Sprout" onclick="window.open('https://app.sproutsocial.com/dashboard/7/')" />
+		</form>
+		</td>
+		
+		</tr>
+		
+		<tr><!-- French stuff -->
+		<td bgcolor=#fe2e64><h3>French Launcher Text</h3></td>
+  		<td bgcolor=#fe2e64><h3>French Subject</h3></td>
+		<td bgcolor=#fe2e64><h3>French Forum Text</h3></td>
+		<td bgcolor=#fe2e64><h3>French Twitter Text</h3></td>		
+		<TR>
+		
+		<td><p class="french"></p></td>
+		<td><p class="frsubject"></p></td>
+		<td><p class="frForum"></p></td>
+	    <td><p class="frTwitter"></p></td>
+		</tr>
+		<tr>
+	<td><form target="#" style="margin:0px;float:center;" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW FR Launcher" onclick="window.open('http://msgtool.funcom.com/view_note?universe=TSWLive/fr&revision=latest')" />
+		</form>	
+	
+		<form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC FR Launcher" onclick="window.open('http://msgtool.funcom.com/view_note?universe=AoCLiveEU/fr&revision=latest')" />
+		</form>
+		<td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW FR Forums" onclick="window.open('https://forums.thesecretworld.com/forumdisplay.php?98-Annonces')" />
+		</form>
+
+		<form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC FR Forums" onclick="window.open('http://forums.ageofconan.com/forumdisplay.php?46-Annonces')" />
+		</form>	
+		</td>
+		<td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW FR Forums" onclick="window.open('https://forums.thesecretworld.com/forumdisplay.php?98-Annonces')" />
+		</form>
+		
+		<form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC FR Forums" onclick="window.open('http://forums.ageofconan.com/forumdisplay.php?46-Annonces')" />
+		</form>
+		</td><td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value=" Sprout" onclick="window.open('https://app.sproutsocial.com/dashboard/7/')" />
+		</form>
+		</tr>
+		
+		
+		<!-- German stuff -->
+		<tr>
+        <td bgcolor=#ffbf00><h3>German Launcher Text</h3></td>
+		<td bgcolor=#ffbf00><h3>German Subject</h3></td>
+        <td bgcolor=#ffbf00><h3>German Forum Text</h3></td>
+		<td bgcolor=#ffbf00><h3>German Twitter Text</h3></td>
+		</TR>
+		<TR>
+		<td><p class="german"></p></td>
+		<td><p class="desubject"></p></td>    
+		<td><p class="deForum"></p></td>
+        <td><p class="deTwitter"></p></td>
+		</tr>
+		<tr>
+		<td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW DE Launcher" onclick="window.open('http://msgtool.funcom.com/view_note?universe=TSWLive/de&revision=latest')" />
+		</form>
+		
+		<form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC DE Launcher" onclick="window.open('http://msgtool.funcom.com/view_note?universe=AoCLiveEU/de&revision=latest')" />
+		</form>
+			<td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW DE Forums" onclick="window.open('https://forums.thesecretworld.com/forumdisplay.php?67-Ank%C3%BCndigungen')" />
+		</form>
+		
+		<form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC DE Forums" onclick="window.open('http://forums.ageofconan.com/forumdisplay.php?84-Ank%C3%BCndigungen')" />
+		</form>
+		</td><td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  TSW DE Forums" onclick="window.open('https://forums.thesecretworld.com/forumdisplay.php?67-Ank%C3%BCndigungen')" />
+		</form>
+		
+		<form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AOC DE Forums" onclick="window.open('http://forums.ageofconan.com/forumdisplay.php?84-Ank%C3%BCndigungen')" />
+		</form>
+		</td><td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value=" Sprout" onclick="window.open('https://app.sproutsocial.com/dashboard/7/')" />
+		</form>
+		</tr>
+		
+		<tr>
+		<td bgcolor=#33cc33><h3>AO Launcher Text</h3></td>
+		<td bgcolor=#33cc33><h3>AO Subject</h3></td>	
+		<td bgcolor=#33cc33><h3>AO Message</h3></td>
+		<td bgcolor=#2F4F4F><h3>World Time Clock</h3></td>
+		</tr>
+		<td><p class="en_aoLauncher"></p></td>
+		<td><p class="en_aoSubject"></p></td>
+		<td><p class="en_aoForum"></p></td>
+		<td>  <div id="output">
+
+        <a href="" target="_blank">Link to World Clock</a>
+		<script type="text/javascript" src="newlauncher.js"></script>
+		    </div> </td>
+		</tr>
+		<tr>
+		<td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AO Launcher" onclick="window.open('http://launcher.anarchy-online.com/launcherAdmin/editMsgForm.html?msgid=49')" />
+		</form>
+		<td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AO Forums" onclick="window.open('http://forums.anarchy-online.com/forumdisplay.php?507-Server-Notices')" />
+		</form>
+		<td><form target="#" style="margin:0px;float:center;"> 
+		<input type="button" value="  AO Forums" onclick="window.open('http://forums.anarchy-online.com/forumdisplay.php?507-Server-Notices')" />    
+		</form>
+		</td>
+		</tr>
+		
+		</tbody>
+		</table>  
+    </div>
+    <div id="output">
+
+  
+        
+		<script type="text/javascript" src="newlauncher.js"></script>
+		    </div> 
+</p>	
+</body>
+
+</html>
